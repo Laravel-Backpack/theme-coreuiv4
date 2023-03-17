@@ -1,0 +1,207 @@
+:root {
+    --bs-primary: #7c69ef;
+    --cui-primary: #7c69ef;
+    --cui-link-color: #7c69ef;
+    --cui-link-hover-color: #6852ed;
+    --cui-primary-rgb: 124, 105, 239;
+
+    --cui-input-group-addon-bg: #f9fbfd;
+    --cui-input-group-addon-border-color: #0028641f;
+    --cui-input-border-color: #0028641f;
+
+    --cui-form-check-input-checked-bg-color: #7c69ef;
+    --cui-form-check-input-checked-border-color: #7c69ef;
+
+    --cui-sidebar-1: #5c4fa9;
+    --cui-sidebar-2: #2c2950;
+}
+
+body {
+    background-color: #f1f4f8;
+    font-size: 90%;
+}
+
+.header {
+    --cui-header-bg: transparent;
+    --cui-header-border: transparent;
+}
+
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+.btn-link {
+    text-decoration: none;
+}
+.btn-primary {
+    --cui-btn-bg: #7c69ef;
+    --cui-btn-border-color: #7c69ef;
+    --cui-btn-hover-bg: #6852ed;
+    --cui-btn-hover-border-color: #6852ed;
+    --cui-btn-active-bg: #6852ed;
+    --cui-btn-active-border-color: #6852ed;
+    --cui-btn-disabled-bg: #7c69ef;
+    --cui-btn-disabled-border-color: #7c69ef;
+}
+.pagination {
+    --cui-pagination-bg: #fff;
+    --cui-pagination-focus-bg: #6852ed;
+    --cui-pagination-active-bg: #7c69ef;
+    --cui-pagination-active-border-color: #7c69ef;
+}
+.card,
+.form-group {
+    margin-bottom: 1.5rem;
+}
+.form-control, .input-group-text {
+    border-radius: 0.2rem;
+}
+.form-group > label {
+    font-weight: bold;
+}
+.form-switch > [type="checkbox"] {
+    transform: scale(1.2);
+}
+
+a.btn:hover, li.paginate_button a {
+    text-decoration: none !important;
+}
+
+#sidebar.bg-dark-gradient {
+    background: var(--cui-sidebar-2);
+    background: linear-gradient(0deg, var(--cui-sidebar-1) 0%, var(--cui-sidebar-2) 100%);
+}
+
+#crudTable_wrapper .dataTables_length select {
+    min-width: 3.6rem;
+    margin-right: 0.4rem;
+}
+
+#crudTable_wrapper #crudTable.dtr-inline.collapsed > tbody > tr > .dtr-control:before,
+#crudTable_wrapper table.dataTable.dtr-inline.collapsed > tbody > tr > .dtr-control:before {
+    top: 0;
+}
+
+#crudTable_wrapper #crudTable td,
+#crudTable_wrapper #crudTable th,
+#crudTable_wrapper table.dataTable td,
+#crudTable_wrapper table.dataTable th {
+    outline: none;
+    vertical-align: middle;
+    line-height: 1em;
+}
+
+#crudTable_wrapper #crudTable thead > tr > th:not(.sorting_disabled),
+#crudTable_wrapper #crudTable thead > tr > td,
+#crudTable_wrapper table.dataTable thead > tr > th:not(.sorting_disabled),
+#crudTable_wrapper table.dataTable thead > tr > td {
+    padding-right: 30px;
+}
+
+#crudTable_wrapper #crudTable.has-hidden-columns .details-control,
+#crudTable_wrapper table.dataTable.has-hidden-columns .details-control {
+    margin-left: 0.25rem;
+}
+
+#crudTable_wrapper #crudTable[data-has-bulk-actions="1"].has-hidden-columns thead tr th:first-child,
+#crudTable_wrapper #crudTable[data-has-bulk-actions="1"].has-hidden-columns tfoot tr th:first-child,
+#crudTable_wrapper table.dataTable[data-has-bulk-actions="1"].has-hidden-columns thead tr th:first-child,
+#crudTable_wrapper table.dataTable[data-has-bulk-actions="1"].has-hidden-columns tfoot tr th:first-child {
+    padding-left: 1.35rem !important;
+}
+
+#crudTable_wrapper #crudTable[data-has-bulk-actions="1"][data-has-details-row="1"] thead tr th:first-child,
+#crudTable_wrapper #crudTable[data-has-bulk-actions="1"][data-has-details-row="1"] tfoot tr th:first-child,
+#crudTable_wrapper table.dataTable[data-has-bulk-actions="1"][data-has-details-row="1"] thead tr th:first-child,
+#crudTable_wrapper table.dataTable[data-has-bulk-actions="1"][data-has-details-row="1"] tfoot tr th:first-child {
+    padding-left: 1.6rem !important;
+}
+
+#crudTable_wrapper #crudTable[data-has-bulk-actions="1"][data-has-details-row="1"].has-hidden-columns thead tr th:first-child,
+#crudTable_wrapper #crudTable[data-has-bulk-actions="1"][data-has-details-row="1"].has-hidden-columns tfoot tr th:first-child,
+#crudTable_wrapper table.dataTable[data-has-bulk-actions="1"][data-has-details-row="1"].has-hidden-columns thead tr th:first-child,
+#crudTable_wrapper table.dataTable[data-has-bulk-actions="1"][data-has-details-row="1"].has-hidden-columns tfoot tr th:first-child {
+    padding-left: 2.6rem !important;
+}
+
+#crudTable_wrapper #crudTable[data-has-bulk-actions="0"][data-has-details-row="1"] thead tr th:first-child,
+#crudTable_wrapper #crudTable[data-has-bulk-actions="0"][data-has-details-row="1"] tfoot tr th:first-child, #crudTable_wrapper #crudTable[data-has-bulk-actions="0"].has-hidden-columns thead tr th:first-child,
+#crudTable_wrapper #crudTable[data-has-bulk-actions="0"].has-hidden-columns tfoot tr th:first-child,
+#crudTable_wrapper table.dataTable[data-has-bulk-actions="0"][data-has-details-row="1"] thead tr th:first-child,
+#crudTable_wrapper table.dataTable[data-has-bulk-actions="0"][data-has-details-row="1"] tfoot tr th:first-child,
+#crudTable_wrapper table.dataTable[data-has-bulk-actions="0"].has-hidden-columns thead tr th:first-child,
+#crudTable_wrapper table.dataTable[data-has-bulk-actions="0"].has-hidden-columns tfoot tr th:first-child {
+    padding-left: 1.8rem !important;
+}
+
+#crudTable_wrapper #crudTable[data-has-bulk-actions="0"][data-has-details-row="1"].has-hidden-columns thead tr th:first-child,
+#crudTable_wrapper #crudTable[data-has-bulk-actions="0"][data-has-details-row="1"].has-hidden-columns tfoot tr th:first-child,
+#crudTable_wrapper table.dataTable[data-has-bulk-actions="0"][data-has-details-row="1"].has-hidden-columns thead tr th:first-child,
+#crudTable_wrapper table.dataTable[data-has-bulk-actions="0"][data-has-details-row="1"].has-hidden-columns tfoot tr th:first-child {
+    padding-left: 3rem !important;
+}
+
+#crudTable_wrapper #crudTable .details-control,
+#crudTable_wrapper table.dataTable .details-control {
+    display: flex;
+}
+
+#crudTable_wrapper #crudTable .crud_bulk_actions_checkbox input,
+#crudTable_wrapper table.dataTable .crud_bulk_actions_checkbox input {
+    width: 1rem;
+    height: 1rem;
+}
+
+#crudTable_wrapper #crudTable:not(.has-hidden-columns) tr td:first-child,
+#crudTable_wrapper table.dataTable:not(.has-hidden-columns) tr td:first-child {
+    padding-top: 1.25rem !important;
+    padding-bottom: 1.25rem !important;
+}
+
+#crudTable_wrapper #crudTable[data-has-bulk-actions="0"] .details-control,
+#crudTable_wrapper #crudTable[data-has-bulk-actions="0"][data-has-details-row="0"] .dtr-control:before,
+#crudTable_wrapper table.dataTable[data-has-bulk-actions="0"] .details-control,
+#crudTable_wrapper table.dataTable[data-has-bulk-actions="0"][data-has-details-row="0"] .dtr-control:before {
+    margin-right: 0.4rem !important;
+}
+
+#crudTable_wrapper #crudTable[data-responsive-table="0"] thead tr th,
+#crudTable_wrapper #crudTable tr td.dataTables_empty,
+#crudTable_wrapper #crudTable tr.dt-hasChild + tr td,
+#crudTable_wrapper table.dataTable[data-responsive-table="0"] thead tr th,
+#crudTable_wrapper table.dataTable tr td.dataTables_empty,
+#crudTable_wrapper table.dataTable tr.dt-hasChild + tr td {
+    display: table-cell;
+}
+
+#crudTable_wrapper .dataTables_scrollBody #crudTable[data-responsive-table="0"] tr th:first-child {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+table.dataTable.table-striped > tbody > tr:nth-of-type(2n+1):hover {
+    background-color: rgba(124, 105, 239, 0.1);
+}
+
+.table-hover tbody tr:hover {
+    background-color: var(--table-row-hover) !important;
+}
+
+/* Headers for operations */
+.main .container-fluid h2 small {
+    font-size: .5em;
+    font-weight: 400;
+}
+
+form .select2.select2-container.select2-container--focus,
+form .select2.select2-container.select2-container--open {
+    background-color: #fff;
+    border: 1px solid var(--primary, #9080f1) !important;
+    box-shadow: 0 0 0 2px #e1dcfb;
+    color: #495057;
+    outline: 0;
+    border-radius: 4px;
+}

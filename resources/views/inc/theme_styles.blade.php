@@ -13,5 +13,5 @@
 @basset(base_path('vendor/backpack/crud/src/resources/assets/libs/source-sans-pro.css'), 'source-sans-pro/source-sans-pro.css')
 
 {{-- Custom Backpack Rules --}}
-@basset(base_path('vendor/backpack/crud/src/resources/assets/css/coreui4.css'))
-@basset(base_path('vendor/backpack/crud/src/resources/assets/css/common.css'))
+@basset(base_path('vendor/backpack/theme-coreuiv4/resources/assets/css/coreui4.css'))
+@basset(base_path('vendor/backpack/theme-coreuiv4/resources/assets/css/common.css'))
