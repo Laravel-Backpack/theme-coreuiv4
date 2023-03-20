@@ -10,7 +10,7 @@
 
 {{-- Source Sans Font --}}
 @bassetArchive('https://github.com/adobe-fonts/source-sans/releases/download/3.046R/WOFF2-source-sans-3.046R.zip', 'source-sans-pro')
-@basset(base_path('vendor/backpack/crud/src/resources/assets/libs/source-sans-pro.css'), 'source-sans-pro/source-sans-pro.css')
+@basset(base_path('vendor/backpack/theme-coreuiv4/resources/assets/libs/source-sans-pro.css'), 'source-sans-pro/source-sans-pro.css')
 
 {{-- Custom Backpack Rules --}}
 @basset(base_path('vendor/backpack/theme-coreuiv4/resources/assets/css/coreui4.css'))
