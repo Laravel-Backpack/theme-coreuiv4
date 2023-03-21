@@ -75,6 +75,10 @@ a.btn:hover, li.paginate_button a {
     background: linear-gradient(0deg, var(--cui-sidebar-1) 0%, var(--cui-sidebar-2) 100%);
 }
 
+#crudTable {
+    background-color: #FFFFFF !important;
+}
+
 #crudTable_wrapper .dataTables_length select {
     min-width: 3.6rem;
     margin-right: 0.4rem;
@@ -204,4 +208,12 @@ form .select2.select2-container.select2-container--open {
     color: #495057;
     outline: 0;
     border-radius: 4px;
+}
+
+/* Create/Update Operations (Backpack forms) */
+
+.tab-container .tab-pane {
+    background-color: #fff;
+    padding: 1rem;
+    border: var(--cui-border-width) var(--cui-border-style) var(--cui-border-color)!important;
 }
