@@ -11,4 +11,5 @@ class AddonServiceProvider extends ServiceProvider
     protected $vendorName = 'backpack';
     protected $packageName = 'theme-coreuiv4';
     protected $commands = [];
+    protected $theme = true;
 }
