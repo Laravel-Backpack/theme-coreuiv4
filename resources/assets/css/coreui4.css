@@ -217,3 +217,8 @@ form .select2.select2-container.select2-container--open {
     padding: 1rem;
     border: var(--cui-border-width) var(--cui-border-style) var(--cui-border-color)!important;
 }
+
+h1[bp-section=page-heading] {
+    font-size: 2rem;
+    line-height: 2.1rem;
+}
