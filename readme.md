@@ -28,6 +28,12 @@ composer require backpack/theme-coreuiv4
 +    'view_namespace' => 'backpack.theme-coreuiv4::',
 ```
 
+**Step 3. (Optional)** Publish the theme config file:
+
+```bash
+php artisan vendor:publish --tag="coreuiv4-config"
+```
+
 ## Overriding
 
 If you need to change a blade file in any way, you can easily copy-paste the file to your app, and modify that file any way you want. If you do that to the correct directory, your file will be used instead of the one in the package. But please keep in mind that you will NOT be getting any updates for that file.
