@@ -222,3 +222,11 @@ h1[bp-section=page-heading] {
     font-size: 2rem;
     line-height: 2.1rem;
 }
+
+html:not([dir=rtl]) .wrapper {
+    padding-left: var(--cui-sidebar-occupy-start, 0)
+}
+
+*[dir=rtl] .wrapper {
+    padding-right: var(--cui-sidebar-occupy-start, 0)
+}
