@@ -2,9 +2,8 @@
 @basset('https://unpkg.com/@coreui/coreui@4.2.4/dist/css/coreui.min.css')
 @basset('https://unpkg.com/animate.css@4.1.1/animate.compat.css')
 @basset('https://unpkg.com/noty@3.2.0-beta-deprecated/lib/noty.css')
+@basset('https://unpkg.com/simplebar@latest/dist/simplebar.css')
 
-@basset('https://coreui.io/demos/bootstrap/4.2/free/vendors/simplebar/css/simplebar.css')
-@basset('https://coreui.io/demos/bootstrap/4.2/free/css/vendors/simplebar.css')
 @basset('https://coreui.io/demos/bootstrap/4.2/free/css/style.css')
 
 {{-- Source Sans Font --}}
