@@ -1,5 +1,5 @@
 <li class="nav-group">
-    <a class="nav-link nav-group-toggle" href="#">
+    <a {{ $attributes->merge([ 'class' => 'nav-link nav-group-toggle', 'href' => $link ?? '#' ]) }}>
         @if($icon != null)<i class="nav-icon {{ $icon }}"></i>@endif
         @if($title != null) <span>{{ $title }}</span>@endif
     </a>

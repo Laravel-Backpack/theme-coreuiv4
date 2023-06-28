@@ -1,1 +1,1 @@
-<li class="nav-title">{{ $title }}</li>
+<li {{ $attributes->merge(['class' => 'nav-title']) }}>{{ $title }}</li>
