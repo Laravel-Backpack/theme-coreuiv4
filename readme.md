@@ -31,7 +31,7 @@ composer require backpack/theme-coreuiv4
 **Step 3. (Optional)** Publish the theme config file:
 
 ```bash
-php artisan vendor:publish --tag="coreuiv4-config"
+php artisan vendor:publish --tag="theme-coreuiv4-config"
 ```
 
 ## Overriding
