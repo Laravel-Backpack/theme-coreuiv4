@@ -10,7 +10,7 @@ The file structure inside this package is the same as CoreUI v2, which is the sa
 
 ## Screenshots
 
-![Backpack Toggle Field Addon](https://via.placeholder.com/600x250?text=screenshot+needed)
+![CleanShot 2023-06-30 at 18 18 43](https://github.com/Laravel-Backpack/theme-coreuiv4/assets/1032474/ddc25a64-b4fb-4a5f-ad6a-c27b636ee664)
 
 
 ## Installation
