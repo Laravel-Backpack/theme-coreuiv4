@@ -230,3 +230,7 @@ html:not([dir=rtl]) .wrapper {
 *[dir=rtl] .wrapper {
     padding-right: var(--cui-sidebar-occupy-start, 0)
 }
+
+.alert > ul {
+    margin-bottom: 0;
+}
