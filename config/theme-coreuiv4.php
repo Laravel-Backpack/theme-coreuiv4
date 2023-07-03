@@ -14,6 +14,10 @@ return [
     |
     */
 
+    // the layout used for authenticated users in the application
+    // this layout is used to display errors to logged users
+    'layout' => 'top_left',
+
     // -------
     // CLASSES
     // -------
