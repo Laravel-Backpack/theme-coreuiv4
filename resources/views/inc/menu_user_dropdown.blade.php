@@ -6,8 +6,10 @@
     </span>
   </a>
   <div class="dropdown-menu {{ backpack_theme_config('html_direction') == 'rtl' ? 'dropdown-menu-left' : 'dropdown-menu-right' }} mr-4 pb-1 pt-1">
-    <a class="dropdown-item" href="{{ route('backpack.account.info') }}"><i class="la la-user"></i> {{ trans('backpack::base.my_account') }}</a>
-    <div class="dropdown-divider"></div>
+    @if(config('backpack.base.setup_my_account_routes'))
+      <a class="dropdown-item" href="{{ route('backpack.account.info') }}"><i class="la la-user"></i> {{ trans('backpack::base.my_account') }}</a>
+      <div class="dropdown-divider"></div>
+    @endif
     <a class="dropdown-item" href="{{ backpack_url('logout') }}"><i class="la la-lock"></i> {{ trans('backpack::base.logout') }}</a>
   </div>
 </li>
