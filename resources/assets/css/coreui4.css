@@ -234,3 +234,7 @@ html:not([dir=rtl]) .wrapper {
 .alert > ul {
     margin-bottom: 0;
 }
+
+#datatable_search_stack .input-icon-addon {
+    display: none;
+}
