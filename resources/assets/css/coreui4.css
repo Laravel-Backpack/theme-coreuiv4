@@ -36,6 +36,7 @@ a:hover {
 .btn-link {
     text-decoration: none;
 }
+
 .btn-primary {
     --cui-btn-bg: #7c69ef;
     --cui-btn-border-color: #7c69ef;
@@ -46,12 +47,70 @@ a:hover {
     --cui-btn-disabled-bg: #7c69ef;
     --cui-btn-disabled-border-color: #7c69ef;
 }
+
+.btn-secondary {
+    --cui-btn-hover-color: #000015;
+    --cui-btn-hover-bg: #aaaeb4;
+    --cui-btn-hover-border-color: #9da5b1;
+    --cui-btn-color: rgba(44, 56, 74, 0.95);
+    --cui-btn-bg: #acb3bd;
+    --cui-btn-border-color: #a7aeb9;
+}
+
 .pagination {
     --cui-pagination-bg: #fff;
     --cui-pagination-focus-bg: #6852ed;
     --cui-pagination-active-bg: #7c69ef;
     --cui-pagination-active-border-color: #7c69ef;
 }
+
+/* Dropdown filter */
+.dropdown-item:hover, .dropdown-item:focus {
+    color: #14203b;
+    text-decoration: none;
+    background-color: #F9FBFD;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    color: #FFFFFF;
+    text-decoration: none;
+    background-color: #7c69ef;
+}
+
+.dropdown-item.disabled, .dropdown-item:disabled {
+    color: #869AB8;
+    pointer-events: none;
+    background-color: transparent;
+}
+
+/* Datepicker and DateRangePicker */
+.datepicker table tr td.active.active,
+.datepicker table tr td.active.highlighted.active,
+.datepicker table tr td.active.highlighted:active,
+.datepicker table tr td.active:active {
+    background-color: #7c69ef !important;
+}
+
+.daterangepicker .ranges li.active {
+    background-color: rgba(50, 31, 219, 0.5) !important;
+}
+
+.daterangepicker td.active,
+.daterangepicker td.active:hover {
+    background-color: rgba(50, 31, 219, 0.5) !important;
+}
+
+/* Select 2 + Select 2 multiple */
+.select2-container--bootstrap .select2-results__option--highlighted[aria-selected]{
+    background-color: rgba(50, 31, 219, 0.5) !important;
+    color: #fff !important;
+}
+
+.select2-container--bootstrap .select2-results__option[aria-selected=true] {
+    background-color: #7c69ef !important;
+    color: #fff !important;
+}
+
 .card,
 .form-group {
     margin-bottom: 1.5rem;
@@ -61,6 +120,7 @@ a:hover {
 }
 .form-group > label {
     font-weight: bold;
+    margin-bottom: 0.5rem;
 }
 .form-switch > [type="checkbox"] {
     transform: scale(1.2);
