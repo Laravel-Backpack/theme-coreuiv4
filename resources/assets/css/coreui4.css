@@ -120,6 +120,7 @@ a:hover {
 }
 .form-group > label {
     font-weight: bold;
+    margin-bottom: 0.5rem;
 }
 .form-switch > [type="checkbox"] {
     transform: scale(1.2);
