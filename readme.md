@@ -21,7 +21,7 @@ The file structure inside this package is the same as CoreUI v2, which is the sa
 composer require backpack/theme-coreuiv4
 ```
 
-**Step 2.** Go to `config/backpack/base.php` and change your view namespace:
+**Step 2.** Go to `config/backpack/ui.php` and change your view namespace:
 
 ```diff
 -    'view_namespace' => 'backpack::',
