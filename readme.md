@@ -15,6 +15,18 @@ The file structure inside this package is the same as CoreUI v2, which is the sa
 
 ## Installing
 
+### Automatic installation
+
+Because this a 1st party theme, you can quickly install it using
+
+```
+php artisan backpack:require:theme-coreuiv4
+```
+
+Alternatively, follow the manual installation process below.
+
+## Manual installation
+
 **Step 1.** Install via Composer
 
 ``` bash
