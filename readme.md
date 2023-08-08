@@ -13,7 +13,7 @@ The file structure inside this package is the same as CoreUI v2, which is the sa
 ![CleanShot 2023-06-30 at 18 18 43](https://github.com/Laravel-Backpack/theme-coreuiv4/assets/1032474/ddc25a64-b4fb-4a5f-ad6a-c27b636ee664)
 
 
-## Installation
+## Installing
 
 **Step 1.** Install via Composer
 
@@ -33,6 +33,14 @@ composer require backpack/theme-coreuiv4
 ```bash
 php artisan vendor:publish --tag="theme-coreuiv4-config"
 ```
+
+## Uninstalling
+
+To uninstall this Backpack theme:
+
+1. Remove the composer package. Eg. `composer remove backpack/theme-coreuiv4`
+2. Delete the config file. Eg. `rm -rf config/backpack/theme-coreuiv4.php`
+3. Install a new theme (eg. `php artisan backpack:require:theme-tabler`) or change the `view_namespace` in `config/backpack/ui.php` to the theme you want to be active.
 
 ## Overriding
 
