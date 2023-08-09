@@ -9,7 +9,6 @@
         <div class="simplebar-mask">
             <div class="simplebar-content-wrapper" tabindex="0" role="region" aria-label="scrollable content">
                 <div class="simplebar-content">
-                    <li class="nav-title">{{ trans('backpack::base.administration') }}</li>
                     @include(backpack_view('inc.sidebar_content'))
                 </div>
             </div>
