@@ -1,7 +1,7 @@
 @extends(backpack_view(backpack_user() && backpack_theme_config('layout') ? 'layouts.'.backpack_theme_config('layout') : 'errors.blank'))
 
 @section('content')
-<div class="bg-light min-vh-100 d-flex flex-row align-items-center">
+<div class="min-vh-100 d-flex align-items-center">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-md-6">
