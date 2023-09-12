@@ -1,7 +1,7 @@
 @extends(backpack_view(backpack_user() && backpack_theme_config('layout') ? 'layouts.'.backpack_theme_config('layout') : 'errors.blank'))
 
 @section('content')
-<div class="min-vh-100 d-flex align-items-center">
+<div class="d-flex align-items-center" style="height: calc(100vh - 7rem)">
   <div class="container">
       <div class="d-flex justify-content-center">
         <h1 class="display-2 mb-0 me-4">{{ $error_number }}</h1>
