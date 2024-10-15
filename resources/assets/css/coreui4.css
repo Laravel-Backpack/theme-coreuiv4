@@ -239,6 +239,14 @@ a.btn:hover, li.paginate_button a {
     padding-bottom: 1.25rem !important;
 }
 
+#crudTable_wrapper #crudTable tr th:first-child, 
+#crudTable_wrapper #crudTable tr td:first-child, 
+#crudTable_wrapper table.dataTable tr th:first-child, 
+#crudTable_wrapper table.dataTable tr td:first-child
+{
+    display: flex;
+}
+
 #crudTable_wrapper #crudTable[data-has-bulk-actions="0"] .details-control,
 #crudTable_wrapper #crudTable[data-has-bulk-actions="0"][data-has-details-row="0"] .dtr-control:before,
 #crudTable_wrapper table.dataTable[data-has-bulk-actions="0"] .details-control,
