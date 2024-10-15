@@ -1,7 +1,7 @@
 {{-- =================================================== --}}
 {{-- ========== Top menu items (ordered left) ========== --}}
 {{-- =================================================== --}}
-<ul class="nav navbar-nav d-md-down-none">
+<ul class="header-nav d-none d-lg-flex">
 
     @if (backpack_auth()->check())
         {{-- Topbar. Contains the left part --}}
@@ -16,7 +16,7 @@
 {{-- ========================================================= --}}
 {{-- ========= Top menu right items (ordered right) ========== --}}
 {{-- ========================================================= --}}
-<ul class="nav ml-auto @if(backpack_theme_config('html_direction') == 'rtl') mr-0 @endif">
+<ul class="header-nav ms-auto @if(backpack_theme_config('html_direction') == 'rtl') mr-0 @endif">
     @if (backpack_auth()->guest())
         <li class="nav-item"><a class="nav-link" href="{{ route('backpack.auth.login') }}">{{ trans('backpack::base.login') }}</a>
         </li>

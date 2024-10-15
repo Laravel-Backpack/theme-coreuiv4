@@ -100,6 +100,20 @@ a:hover {
     background-color: rgba(50, 31, 219, 0.5) !important;
 }
 
+.sidebar-brand {
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 var(--cui-sidebar-brand-height);
+}
+
+.sidebar {
+    --cui-sidebar-brand-height: 4rem;
+}
+
+.header > .container-fluid, .header > .container-sm, .header > .container-md, .header > .container-lg, .header > .container-xl, .header > .container-xxl, .sidebar-header {
+    min-height: calc(4rem + 1px);
+}
+
 /* Select 2 + Select 2 multiple */
 .select2-container--bootstrap .select2-results__option--highlighted[aria-selected]{
     background-color: rgba(50, 31, 219, 0.5) !important;
