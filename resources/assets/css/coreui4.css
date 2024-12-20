@@ -14,6 +14,8 @@
 
     --cui-sidebar-1: #5c4fa9;
     --cui-sidebar-2: #2c2950;
+    --bg-switch-checked-color: var(--cui-primary);
+
 }
 
 body {
@@ -319,4 +321,45 @@ html:not([dir=rtl]) .wrapper {
 
 #datatable_search_stack .input-icon-addon {
     display: none;
+}
+.switch-label .switch-slider::after {
+    position: absolute;
+    right: 1.5em;
+    z-index: 1;
+    margin-top: -1.8em;
+    font-size: 8px;
+    font-weight: 600;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+    content: attr(data-unchecked);
+    transition: inherit;
+}
+
+.switch-slider {
+    position: relative;
+    display: block;
+}
+
+.switch-label.switch-sm .switch-slider {
+    font-size: 8px;
+}
+
+.switch-label.switch-sm .switch-input:checked ~ .switch-slider::after {
+    transform: translateX(-4.3em);
+}
+.switch-label .switch-input:checked ~ .switch-slider::after {
+    left: 1px;
+    color: #fff;
+    content: attr(data-checked);
+}
+
+.switch-input.form-check-input {
+    width: 3em;
+    height: 1.5em;
+}
+
+.form-switch.switch {
+    width:3.5em;
+    height: 1.8em;
 }
