@@ -151,121 +151,122 @@ a.btn:hover, li.paginate_button a {
     background: linear-gradient(0deg, var(--cui-sidebar-1) 0%, var(--cui-sidebar-2) 100%);
 }
 
-#crudTable {
+table.dataTable {
     background-color: #FFFFFF !important;
 }
 
-#crudTable_wrapper .dataTables_length select {
+.dataTables_wrapper .dataTables_length select {
     min-width: 3.6rem;
     margin-right: 0.4rem;
 }
 
-#crudTable_wrapper #crudTable.dtr-inline.collapsed > tbody > tr > .dtr-control:before,
-#crudTable_wrapper table.dataTable.dtr-inline.collapsed > tbody > tr > .dtr-control:before {
+.dataTables_wrapper .dataTable.dtr-inline.collapsed > tbody > tr > .dtr-control:before,
+.dataTables_wrapper table.dataTable.dtr-inline.collapsed > tbody > tr > .dtr-control:before {
     top: 0;
 }
 
-#crudTable_wrapper #crudTable td,
-#crudTable_wrapper #crudTable th,
-#crudTable_wrapper table.dataTable td,
-#crudTable_wrapper table.dataTable th {
+.dataTables_wrapper .dataTable td,
+.dataTables_wrapper .dataTable th,
+.dataTables_wrapper table.dataTable td,
+.dataTables_wrapper table.dataTable th {
     outline: none;
     vertical-align: middle;
     line-height: 1em;
 }
 
-#crudTable_wrapper #crudTable thead > tr > th:not(.sorting_disabled),
-#crudTable_wrapper #crudTable thead > tr > td,
-#crudTable_wrapper table.dataTable thead > tr > th:not(.sorting_disabled),
-#crudTable_wrapper table.dataTable thead > tr > td {
+.dataTables_wrapper .dataTable thead > tr > th:not(.sorting_disabled),
+.dataTables_wrapper .dataTable thead > tr > td,
+.dataTables_wrapper table.dataTable thead > tr > th:not(.sorting_disabled),
+.dataTables_wrapper table.dataTable thead > tr > td {
     padding-right: 30px;
 }
 
-#crudTable_wrapper #crudTable.has-hidden-columns .details-control,
-#crudTable_wrapper table.dataTable.has-hidden-columns .details-control {
+.dataTables_wrapper .dataTable.has-hidden-columns .details-control,
+.dataTables_wrapper table.dataTable.has-hidden-columns .details-control {
     margin-left: 0.25rem;
 }
 
-#crudTable_wrapper #crudTable[data-has-bulk-actions="1"].has-hidden-columns thead tr th:first-child,
-#crudTable_wrapper #crudTable[data-has-bulk-actions="1"].has-hidden-columns tfoot tr th:first-child,
-#crudTable_wrapper table.dataTable[data-has-bulk-actions="1"].has-hidden-columns thead tr th:first-child,
-#crudTable_wrapper table.dataTable[data-has-bulk-actions="1"].has-hidden-columns tfoot tr th:first-child {
+.dataTables_wrapper .dataTable[data-has-bulk-actions="1"].has-hidden-columns thead tr th:first-child,
+.dataTables_wrapper .dataTable[data-has-bulk-actions="1"].has-hidden-columns tfoot tr th:first-child,
+.dataTables_wrapper table.dataTable[data-has-bulk-actions="1"].has-hidden-columns thead tr th:first-child,
+.dataTables_wrapper table.dataTable[data-has-bulk-actions="1"].has-hidden-columns tfoot tr th:first-child {
     padding-left: 1.35rem !important;
 }
 
-#crudTable_wrapper #crudTable[data-has-bulk-actions="1"][data-has-details-row="1"] thead tr th:first-child,
-#crudTable_wrapper #crudTable[data-has-bulk-actions="1"][data-has-details-row="1"] tfoot tr th:first-child,
-#crudTable_wrapper table.dataTable[data-has-bulk-actions="1"][data-has-details-row="1"] thead tr th:first-child,
-#crudTable_wrapper table.dataTable[data-has-bulk-actions="1"][data-has-details-row="1"] tfoot tr th:first-child {
+.dataTables_wrapper .dataTable[data-has-bulk-actions="1"][data-has-details-row="1"] thead tr th:first-child,
+.dataTables_wrapper .dataTable[data-has-bulk-actions="1"][data-has-details-row="1"] tfoot tr th:first-child,
+.dataTables_wrapper table.dataTable[data-has-bulk-actions="1"][data-has-details-row="1"] thead tr th:first-child,
+.dataTables_wrapper table.dataTable[data-has-bulk-actions="1"][data-has-details-row="1"] tfoot tr th:first-child {
     padding-left: 1.6rem !important;
 }
 
-#crudTable_wrapper #crudTable[data-has-bulk-actions="1"][data-has-details-row="1"].has-hidden-columns thead tr th:first-child,
-#crudTable_wrapper #crudTable[data-has-bulk-actions="1"][data-has-details-row="1"].has-hidden-columns tfoot tr th:first-child,
-#crudTable_wrapper table.dataTable[data-has-bulk-actions="1"][data-has-details-row="1"].has-hidden-columns thead tr th:first-child,
-#crudTable_wrapper table.dataTable[data-has-bulk-actions="1"][data-has-details-row="1"].has-hidden-columns tfoot tr th:first-child {
+.dataTables_wrapper .dataTable[data-has-bulk-actions="1"][data-has-details-row="1"].has-hidden-columns thead tr th:first-child,
+.dataTables_wrapper .dataTable[data-has-bulk-actions="1"][data-has-details-row="1"].has-hidden-columns tfoot tr th:first-child,
+.dataTables_wrapper table.dataTable[data-has-bulk-actions="1"][data-has-details-row="1"].has-hidden-columns thead tr th:first-child,
+.dataTables_wrapper table.dataTable[data-has-bulk-actions="1"][data-has-details-row="1"].has-hidden-columns tfoot tr th:first-child {
     padding-left: 2.6rem !important;
 }
 
-#crudTable_wrapper #crudTable[data-has-bulk-actions="0"][data-has-details-row="1"] thead tr th:first-child,
-#crudTable_wrapper #crudTable[data-has-bulk-actions="0"][data-has-details-row="1"] tfoot tr th:first-child, #crudTable_wrapper #crudTable[data-has-bulk-actions="0"].has-hidden-columns thead tr th:first-child,
-#crudTable_wrapper #crudTable[data-has-bulk-actions="0"].has-hidden-columns tfoot tr th:first-child,
-#crudTable_wrapper table.dataTable[data-has-bulk-actions="0"][data-has-details-row="1"] thead tr th:first-child,
-#crudTable_wrapper table.dataTable[data-has-bulk-actions="0"][data-has-details-row="1"] tfoot tr th:first-child,
-#crudTable_wrapper table.dataTable[data-has-bulk-actions="0"].has-hidden-columns thead tr th:first-child,
-#crudTable_wrapper table.dataTable[data-has-bulk-actions="0"].has-hidden-columns tfoot tr th:first-child {
+.dataTables_wrapper .dataTable[data-has-bulk-actions="0"][data-has-details-row="1"] thead tr th:first-child,
+.dataTables_wrapper .dataTable[data-has-bulk-actions="0"][data-has-details-row="1"] tfoot tr th:first-child, 
+.dataTables_wrapper .dataTable[data-has-bulk-actions="0"].has-hidden-columns thead tr th:first-child,
+.dataTables_wrapper .dataTable[data-has-bulk-actions="0"].has-hidden-columns tfoot tr th:first-child,
+.dataTables_wrapper table.dataTable[data-has-bulk-actions="0"][data-has-details-row="1"] thead tr th:first-child,
+.dataTables_wrapper table.dataTable[data-has-bulk-actions="0"][data-has-details-row="1"] tfoot tr th:first-child,
+.dataTables_wrapper table.dataTable[data-has-bulk-actions="0"].has-hidden-columns thead tr th:first-child,
+.dataTables_wrapper table.dataTable[data-has-bulk-actions="0"].has-hidden-columns tfoot tr th:first-child {
     padding-left: 1.8rem !important;
 }
 
-#crudTable_wrapper #crudTable[data-has-bulk-actions="0"][data-has-details-row="1"].has-hidden-columns thead tr th:first-child,
-#crudTable_wrapper #crudTable[data-has-bulk-actions="0"][data-has-details-row="1"].has-hidden-columns tfoot tr th:first-child,
-#crudTable_wrapper table.dataTable[data-has-bulk-actions="0"][data-has-details-row="1"].has-hidden-columns thead tr th:first-child,
-#crudTable_wrapper table.dataTable[data-has-bulk-actions="0"][data-has-details-row="1"].has-hidden-columns tfoot tr th:first-child {
+.dataTables_wrapper .dataTable[data-has-bulk-actions="0"][data-has-details-row="1"].has-hidden-columns thead tr th:first-child,
+.dataTables_wrapper .dataTable[data-has-bulk-actions="0"][data-has-details-row="1"].has-hidden-columns tfoot tr th:first-child,
+.dataTables_wrapper table.dataTable[data-has-bulk-actions="0"][data-has-details-row="1"].has-hidden-columns thead tr th:first-child,
+.dataTables_wrapper table.dataTable[data-has-bulk-actions="0"][data-has-details-row="1"].has-hidden-columns tfoot tr th:first-child {
     padding-left: 3rem !important;
 }
 
-#crudTable_wrapper #crudTable .details-control,
-#crudTable_wrapper table.dataTable .details-control {
+.dataTables_wrapper .dataTable .details-control,
+.dataTables_wrapper table.dataTable .details-control {
     display: flex;
 }
 
-#crudTable_wrapper #crudTable .crud_bulk_actions_checkbox input,
-#crudTable_wrapper table.dataTable .crud_bulk_actions_checkbox input {
+.dataTables_wrapper .dataTable .crud_bulk_actions_checkbox input,
+.dataTables_wrapper table.dataTable .crud_bulk_actions_checkbox input {
     width: 1rem;
     height: 1rem;
 }
 
-#crudTable_wrapper #crudTable:not(.has-hidden-columns) tr td:first-child,
-#crudTable_wrapper table.dataTable:not(.has-hidden-columns) tr td:first-child {
+.dataTables_wrapper .dataTable:not(.has-hidden-columns) tr td:first-child,
+.dataTables_wrapper table.dataTable:not(.has-hidden-columns) tr td:first-child {
     padding-top: 1.25rem !important;
     padding-bottom: 1.25rem !important;
 }
 
-#crudTable_wrapper #crudTable tr th:first-child, 
-#crudTable_wrapper #crudTable tr td:first-child, 
-#crudTable_wrapper table.dataTable tr th:first-child, 
-#crudTable_wrapper table.dataTable tr td:first-child
+.dataTables_wrapper .dataTable tr th:first-child, 
+.dataTables_wrapper .dataTable tr td:first-child, 
+.dataTables_wrapper table.dataTable tr th:first-child, 
+.dataTables_wrapper table.dataTable tr td:first-child
 {
     display: flex;
 }
 
-#crudTable_wrapper #crudTable[data-has-bulk-actions="0"] .details-control,
-#crudTable_wrapper #crudTable[data-has-bulk-actions="0"][data-has-details-row="0"] .dtr-control:before,
-#crudTable_wrapper table.dataTable[data-has-bulk-actions="0"] .details-control,
-#crudTable_wrapper table.dataTable[data-has-bulk-actions="0"][data-has-details-row="0"] .dtr-control:before {
+.dataTables_wrapper .dataTable[data-has-bulk-actions="0"] .details-control,
+.dataTables_wrapper .dataTable[data-has-bulk-actions="0"][data-has-details-row="0"] .dtr-control:before,
+.dataTables_wrapper table.dataTable[data-has-bulk-actions="0"] .details-control,
+.dataTables_wrapper table.dataTable[data-has-bulk-actions="0"][data-has-details-row="0"] .dtr-control:before {
     margin-right: 0.4rem !important;
 }
 
-#crudTable_wrapper #crudTable[data-responsive-table="0"] thead tr th,
-#crudTable_wrapper #crudTable tr td.dataTables_empty,
-#crudTable_wrapper #crudTable tr.dt-hasChild + tr td,
-#crudTable_wrapper table.dataTable[data-responsive-table="0"] thead tr th,
-#crudTable_wrapper table.dataTable tr td.dataTables_empty,
-#crudTable_wrapper table.dataTable tr.dt-hasChild + tr td {
+.dataTables_wrapper .dataTable[data-responsive-table="0"] thead tr th,
+.dataTables_wrapper .dataTable tr td.dataTables_empty,
+.dataTables_wrapper .dataTable tr.dt-hasChild + tr td,
+.dataTables_wrapper table.dataTable[data-responsive-table="0"] thead tr th,
+.dataTables_wrapper table.dataTable tr td.dataTables_empty,
+.dataTables_wrapper table.dataTable tr.dt-hasChild + tr td {
     display: table-cell;
 }
 
-#crudTable_wrapper .dataTables_scrollBody #crudTable[data-responsive-table="0"] tr th:first-child {
+.dataTables_wrapper .dataTables_scrollBody .dataTable[data-responsive-table="0"] tr th:first-child {
     padding-top: 0 !important;
     padding-bottom: 0 !important;
 }

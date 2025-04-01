@@ -61,7 +61,7 @@ form .select2.select2-container {
 }
 
 /*Table - List View*/
-#crudTable_wrapper tfoot tr {
+.dataTables_wrapper tfoot tr {
     font-size: .625rem;
     font-weight: var(--tblr-font-weight-bold);
     text-transform: uppercase;
@@ -70,11 +70,11 @@ form .select2.select2-container {
     color: var(--tblr-muted);
 }
 
-#crudTable_wrapper div.row .col-sm-12 {
+.dataTables_wrapper div.row .col-sm-12 {
     position: relative;
 }
 
-#crudTable_processing.dataTables_processing.card {
+.dataTables_processing.card {
     all: unset;
     position: absolute;
     background: rgba(255, 255, 255, 0.9);
@@ -86,7 +86,7 @@ form .select2.select2-container {
     border-radius: 5px;
 }
 
-#crudTable_processing.dataTables_processing.card > img {
+.dataTables_processing.card > img {
     margin: 0;
     position: absolute;
     top: 50%;
@@ -94,17 +94,17 @@ form .select2.select2-container {
     transform: translate(-50%, -50%);
 }
 
-#crudTable_processing.dataTables_processing.card > div {
+.dataTables_processing.card > div {
     display: none !important;
 }
 
-#crudTable_wrapper #crudTable,
-#crudTable_wrapper table.dataTable {
+.dataTables_wrapper .dataTable,
+.dataTables_wrapper table.dataTable {
     margin-top: 0 !important;
 }
 
-#crudTable_wrapper #crudTable.dtr-inline.collapsed > tbody > tr > .dtr-control:before,
-#crudTable_wrapper table.dataTable.dtr-inline.collapsed > tbody > tr > .dtr-control:before {
+.dataTables_wrapper .dataTable.dtr-inline.collapsed > tbody > tr > .dtr-control:before,
+.dataTables_wrapper table.dataTable.dtr-inline.collapsed > tbody > tr > .dtr-control:before {
     background-color: transparent;
     color: #636161;
     font-family: "Line Awesome Free";
@@ -121,16 +121,16 @@ form .select2.select2-container {
     margin: 0 0 0 -0.25rem;
 }
 
-#crudTable_wrapper #crudTable .sorting:before,
-#crudTable_wrapper #crudTable .sorting_asc:before,
-#crudTable_wrapper #crudTable .sorting_desc:before,
-#crudTable_wrapper #crudTable .sorting_asc_disabled:before,
-#crudTable_wrapper #crudTable .sorting_desc_disabled:before,
-#crudTable_wrapper table.dataTable .sorting:before,
-#crudTable_wrapper table.dataTable .sorting_asc:before,
-#crudTable_wrapper table.dataTable .sorting_desc:before,
-#crudTable_wrapper table.dataTable .sorting_asc_disabled:before,
-#crudTable_wrapper table.dataTable .sorting_desc_disabled:before {
+.dataTables_wrapper .dataTable .sorting:before,
+.dataTables_wrapper .dataTable .sorting_asc:before,
+.dataTables_wrapper .dataTable .sorting_desc:before,
+.dataTables_wrapper .dataTable .sorting_asc_disabled:before,
+.dataTables_wrapper .dataTable .sorting_desc_disabled:before,
+.dataTables_wrapper table.dataTable .sorting:before,
+.dataTables_wrapper table.dataTable .sorting_asc:before,
+.dataTables_wrapper table.dataTable .sorting_desc:before,
+.dataTables_wrapper table.dataTable .sorting_asc_disabled:before,
+.dataTables_wrapper table.dataTable .sorting_desc_disabled:before {
     right: 0.4em;
     top: 1em;
     content: "\f0d8";
@@ -138,32 +138,32 @@ form .select2.select2-container {
     font-weight: 900;
 }
 
-#crudTable_wrapper #crudTable .sorting:after,
-#crudTable_wrapper #crudTable .sorting_asc:after,
-#crudTable_wrapper #crudTable .sorting_desc:after,
-#crudTable_wrapper #crudTable .sorting_asc_disabled:after,
-#crudTable_wrapper #crudTable .sorting_desc_disabled:after,
-#crudTable_wrapper table.dataTable .sorting:after,
-#crudTable_wrapper table.dataTable .sorting_asc:after,
-#crudTable_wrapper table.dataTable .sorting_desc:after,
-#crudTable_wrapper table.dataTable .sorting_asc_disabled:after,
-#crudTable_wrapper table.dataTable .sorting_desc_disabled:after {
+.dataTables_wrapper .dataTable .sorting:after,
+.dataTables_wrapper .dataTable .sorting_asc:after,
+.dataTables_wrapper .dataTable .sorting_desc:after,
+.dataTables_wrapper .dataTable .sorting_asc_disabled:after,
+.dataTables_wrapper .dataTable .sorting_desc_disabled:after,
+.dataTables_wrapper table.dataTable .sorting:after,
+.dataTables_wrapper table.dataTable .sorting_asc:after,
+.dataTables_wrapper table.dataTable .sorting_desc:after,
+.dataTables_wrapper table.dataTable .sorting_asc_disabled:after,
+.dataTables_wrapper table.dataTable .sorting_desc_disabled:after {
     right: 0.4em;
     content: "\f0d7";
     font: normal normal normal 14px/1 "Line Awesome Free";
     font-weight: 900;
 }
 
-#crudTable_wrapper #crudTable .crud_bulk_actions_checkbox,
-#crudTable_wrapper table.dataTable .crud_bulk_actions_checkbox {
+.dataTables_wrapper .dataTable .crud_bulk_actions_checkbox,
+.dataTables_wrapper table.dataTable .crud_bulk_actions_checkbox {
     display: flex;
     margin: 0 0.6rem 0 0.45rem;
 }
 
-#crudTable_wrapper #crudTable tr th:first-child,
-#crudTable_wrapper #crudTable tr td:first-child,
-#crudTable_wrapper table.dataTable tr th:first-child,
-#crudTable_wrapper table.dataTable tr td:first-child {
+.dataTables_wrapper .dataTable tr th:first-child,
+.dataTables_wrapper .dataTable tr td:first-child,
+.dataTables_wrapper table.dataTable tr th:first-child,
+.dataTables_wrapper table.dataTable tr td:first-child {
     display: flex;
     align-items: center;
     padding-top: 1rem !important;
@@ -171,13 +171,13 @@ form .select2.select2-container {
     padding-left: 0.6rem !important;
 }
 
-#crudTable_wrapper .dt-buttons .dt-button-collection,
-#crudTable_wrapper tr td .btn-group .dropdown-menu {
+.dataTables_wrapper .dt-buttons .dt-button-collection,
+.dataTables_wrapper tr td .btn-group .dropdown-menu {
     max-height: 340px;
     overflow-y: auto;
 }
 
-#crudTable_wrapper .dt-buttons .dt-button-collection {
+.dataTables_wrapper .dt-buttons .dt-button-collection {
     padding: 0;
     border: 0;
 }
