@@ -363,3 +363,49 @@ html:not([dir=rtl]) .wrapper {
     width:3.5em;
     height: 1.8em;
 }
+.dt-paging {
+    margin-top: 10px;
+}
+
+.dt-paging .dt-paging-button {
+    padding: 0;
+    margin: 0;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.dt-paging .dt-paging-button .page-link {
+    position: relative;
+    display: block;
+    padding: 0.5rem 0.75rem;
+    margin: 0 2px;
+    line-height: 1.25;
+    color: var(--bs-primary);
+    background-color: transparent !important;
+    border: none !important;
+    border-radius: 0.25rem !important;
+    box-shadow: none !important;
+}
+
+.dt-paging .dt-paging-button.active .page-link {
+    z-index: 1;
+    color: #fff;
+    background-color: var(--bs-primary) !important;
+    border-color: var(--bs-primary) !important;
+}
+
+.dt-paging .dt-paging-button.disabled .page-link {
+    color: #73818f;
+    pointer-events: none;
+    cursor: auto;
+    background-color: transparent !important;
+    border-color: transparent !important;
+}
+
+.dt-paging .dt-paging-button:not(.disabled):not(.active) .page-link:hover {
+    color: var(--bs-primary);
+    text-decoration: none;
+    background-color: #e4e7ea !important;
+    border-color: transparent !important;
+}
