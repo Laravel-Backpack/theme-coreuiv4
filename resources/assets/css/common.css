@@ -278,31 +278,6 @@ form .select2.select2-container {
     }
 }
 
-.pagination > .disabled > a,
-.pagination > .disabled > a:focus,
-.pagination > .disabled > a:hover,
-.pagination > .disabled > span,
-.pagination > .disabled > span:focus,
-.pagination > .disabled > span:hover {
-    background: transparent;
-}
-
-.pagination > li > a {
-    background: transparent;
-    border: none;
-    border-radius: 5px;
-}
-
-.pagination > li > span:hover {
-    background: white;
-}
-
-.pagination > li:last-child > a,
-.pagination > li:last-child > span,
-.pagination > li:first-child > a,
-.pagination > li:first-child > span {
-    border-radius: 5px;
-}
 
 .box-body.table-responsive {
     padding-left: 15px;
