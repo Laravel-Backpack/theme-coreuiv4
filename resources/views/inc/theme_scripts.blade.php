@@ -1,3 +1,3 @@
-@basset('https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js', true, ['integrity' => 'sha256-m81NDyncZVbr7v9E6qCWXwx/cwjuWDlHCMzi9pjMobA=', 'crossorigin' => 'anonymous'])
-@basset('https://unpkg.com/@coreui/coreui@4.2.6/dist/js/coreui.min.js', true, ['integrity' => 'sha384-7z/8kRsWn+JzUhcmd/7if4xTkhFHSa91GbgPGNPuOACOF6hhbxLeSAX0OhEy5ug9', 'crossorigin' => 'anonymous'])
-@basset('https://unpkg.com/simplebar@6.2.7/dist/simplebar.min.js', true, ['integrity' => 'sha384-IiaRtt+2y5xh3HH+L4JkT7GRvNJgAnAHTOPt2/WWXW4sWqqQcBmQNlVFTWUQhkEp', 'crossorigin' => 'anonymous'])
+@basset('https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js', true, ['integrity' => 'sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y', 'crossorigin' => 'anonymous'])
+@basset('https://cdn.jsdelivr.net/npm/@coreui/coreui@4.3.2/dist/js/coreui.min.js', true, ['integrity' => 'sha384-aSKS9XOpUPpbt04gdmvW98xQixHuU0EpjTi4UM/qEg13Aupu+G/Vbj00+1XwcPc1', 'crossorigin' => 'anonymous'])
+@basset('https://cdn.jsdelivr.net/npm/simplebar@6.3.3/dist/simplebar.min.js', true, ['integrity' => 'sha384-X5d2gvZNWtmHspw5zClv6+Xx3DUCzL71N+xjzdKoE38TlTANrEYtqR6PM2NEZk48', 'crossorigin' => 'anonymous'])
