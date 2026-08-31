@@ -60,10 +60,10 @@
                     </form>
                 </div>
             </div>
+            @includeWhen(config('backpack.multi-auth.features.passkeys', false), 'backpack.multi-auth::auth._passkey_login_button')
             @if (config('backpack.multi-auth.socialite.enabled') && View::exists('backpack.multi-auth::auth._socialite_login_buttons'))
                 @include('backpack.multi-auth::auth._socialite_login_buttons')
             @endif
-            @includeWhen(config('backpack.multi-auth.features.passkeys', false), 'backpack.multi-auth::auth._passkey_login_button')
             @if (backpack_users_have_email() && backpack_email_column() == 'email' && config('backpack.base.setup_password_recovery_routes', true))
                 <div class="text-center"><a href="{{ route('backpack.auth.password.reset') }}">{{ trans('backpack::base.forgot_your_password') }}</a></div>
             @endif
