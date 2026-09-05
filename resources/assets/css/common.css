@@ -61,7 +61,8 @@ form .select2.select2-container {
 }
 
 /*Table - List View*/
-#crudTable_wrapper tfoot tr {
+#crudTable_wrapper tfoot tr,
+.dt-container tfoot tr {
     font-size: .625rem;
     font-weight: var(--tblr-font-weight-bold);
     text-transform: uppercase;
@@ -99,7 +100,8 @@ form .select2.select2-container {
 }
 
 #crudTable_wrapper #crudTable,
-#crudTable_wrapper table.dataTable {
+#crudTable_wrapper table.dataTable,
+.dt-container table.dataTable {
     margin-top: 0 !important;
 }
 
@@ -154,8 +156,39 @@ form .select2.select2-container {
     font-weight: 900;
 }
 
+/* DataTables 2 sort arrows (Backpack v7) - keep the Line Awesome chevrons */
+.dt-container table.dataTable thead > tr > th.dt-orderable-asc span.dt-column-order:before,
+.dt-container table.dataTable thead > tr > th.dt-orderable-desc span.dt-column-order:before,
+.dt-container table.dataTable thead > tr > th.dt-ordering-asc span.dt-column-order:before,
+.dt-container table.dataTable thead > tr > th.dt-ordering-desc span.dt-column-order:before,
+.dt-container table.dataTable thead > tr > td.dt-orderable-asc span.dt-column-order:before,
+.dt-container table.dataTable thead > tr > td.dt-orderable-desc span.dt-column-order:before,
+.dt-container table.dataTable thead > tr > td.dt-ordering-asc span.dt-column-order:before,
+.dt-container table.dataTable thead > tr > td.dt-ordering-desc span.dt-column-order:before {
+    content: "\f0d8";
+    font: normal normal normal 14px/1 "Line Awesome Free";
+    font-weight: 900;
+    opacity: 1;
+}
+
+.dt-container table.dataTable thead > tr > th.dt-orderable-asc span.dt-column-order:after,
+.dt-container table.dataTable thead > tr > th.dt-orderable-desc span.dt-column-order:after,
+.dt-container table.dataTable thead > tr > th.dt-ordering-asc span.dt-column-order:after,
+.dt-container table.dataTable thead > tr > th.dt-ordering-desc span.dt-column-order:after,
+.dt-container table.dataTable thead > tr > td.dt-orderable-asc span.dt-column-order:after,
+.dt-container table.dataTable thead > tr > td.dt-orderable-desc span.dt-column-order:after,
+.dt-container table.dataTable thead > tr > td.dt-ordering-asc span.dt-column-order:after,
+.dt-container table.dataTable thead > tr > td.dt-ordering-desc span.dt-column-order:after {
+    content: "\f0d7";
+    font: normal normal normal 14px/1 "Line Awesome Free";
+    font-weight: 900;
+    opacity: 1;
+}
+
 #crudTable_wrapper #crudTable .crud_bulk_actions_checkbox,
-#crudTable_wrapper table.dataTable .crud_bulk_actions_checkbox {
+#crudTable_wrapper table.dataTable .crud_bulk_actions_checkbox,
+.dt-container .crud_bulk_actions_checkbox,
+.dt-container table.dataTable .crud_bulk_actions_checkbox {
     display: flex;
     margin: 0 0.6rem 0 0.45rem;
 }
@@ -163,7 +196,9 @@ form .select2.select2-container {
 #crudTable_wrapper #crudTable tr th:first-child,
 #crudTable_wrapper #crudTable tr td:first-child,
 #crudTable_wrapper table.dataTable tr th:first-child,
-#crudTable_wrapper table.dataTable tr td:first-child {
+#crudTable_wrapper table.dataTable tr td:first-child,
+.dt-container table.dataTable tr th:first-child,
+.dt-container table.dataTable tr td:first-child {
     display: flex;
     align-items: center;
     padding-top: 1rem !important;
@@ -172,12 +207,15 @@ form .select2.select2-container {
 }
 
 #crudTable_wrapper .dt-buttons .dt-button-collection,
-#crudTable_wrapper tr td .btn-group .dropdown-menu {
+#crudTable_wrapper tr td .btn-group .dropdown-menu,
+.dt-container .dt-buttons .dt-button-collection,
+.dt-container tr td .btn-group .dropdown-menu {
     max-height: 340px;
     overflow-y: auto;
 }
 
-#crudTable_wrapper .dt-buttons .dt-button-collection {
+#crudTable_wrapper .dt-buttons .dt-button-collection,
+.dt-container .dt-buttons .dt-button-collection {
     padding: 0;
     border: 0;
 }
@@ -276,6 +314,17 @@ form .select2.select2-container {
     .dataTables_filter input[type="search"] {
         width: 100%;
     }
+
+    .datatable-search-input {
+        width: 100%;
+    }
+}
+
+/* Backpack v7 datatable search input (DataTables 2) */
+.datatable-search-input {
+    display: inline-block;
+    width: auto;
+    border-radius: 25px;
 }
 
 
@@ -293,7 +342,8 @@ form .select2.select2-container {
     padding: 0;
 }
 
-.dtr-bs-modal .crud_bulk_actions_checkbox {
+.dtr-bs-modal .crud_bulk_actions_checkbox,
+.dtr-modal .crud_bulk_actions_checkbox {
     display: none;
 }
 
